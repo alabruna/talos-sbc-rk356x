@@ -8,7 +8,7 @@ dependencies:
   - stage: base
 steps:
   - sources:
-      - url: https://gitlab.collabora.com/hardware-enablement/rockchip-3588/u-boot/-/archive/{{ .uboot_version }}/u-boot-{{ .uboot_version }}.tar.bz2
+      - url: https://gitlab.collabora.com/hardware-enablement/rockchip-3566/u-boot/-/archive/{{ .uboot_version }}/u-boot-{{ .uboot_version }}.tar.bz2
         destination: u-boot.tar.bz2
         sha256: "{{ .uboot_sha256 }}"
         sha512: "{{ .uboot_sha512 }}"

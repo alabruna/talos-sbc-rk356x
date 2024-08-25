@@ -5,17 +5,18 @@ dependencies:
   - image: "{{ .BUILD_ARG_PKGS_PREFIX }}/tools:{{ .BUILD_ARG_PKGS }}"
 steps:
   - sources:
-      # HACK(rk3588): use collabora's branch, there's still some outstanding changes in mainline
-      - url: https://gitlab.collabora.com/hardware-enablement/rockchip-3588/linux/-/archive/{{ .linux_mainline_ref }}/linux-{{ .linux_mainline_ref }}.tar.bz2
-        destination: linux.tar.bz2
-        sha256: "{{ .linux_mainline_sha256 }}"
-        sha512: "{{ .linux_mainline_sha512 }}"
+      # HACK(rk356x): use collabora's branch, there's still some outstanding changes in mainline
+      #- url: https://gitlab.collabora.com/hardware-enablement/rockchip-3566/linux/-/archive/{{ .linux_mainline_ref }}/linux-{{ .linux_mainline_ref }}.tar.bz2
+      - url: https://git.kernel.org/torvalds/t/linux-{{ .linux_mainline_version }}.tar.gz
+        destination: linux.tar.gz
+        #sha256: "{{ .linux_mainline_sha256 }}"
+        #sha512: "{{ .linux_mainline_sha512 }}"
     env:
       ARCH: {{ if eq .ARCH "aarch64"}}arm64{{ else }}unsupported{{ end }}
     prepare:
       - |
-        tar -xjf linux.tar.bz2 --strip-components=1
-        rm linux.tar.bz2
+        tar -xjf linux.tar.gz --strip-components=1
+        rm linux.tar.gz
 
         mkdir /bin
         ln -sv /toolchain/bin/bash /bin/bash
