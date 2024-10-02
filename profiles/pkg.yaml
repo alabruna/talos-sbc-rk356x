@@ -1,5 +1,5 @@
 name: profiles
 variant: scratch
 finalize:
-  - from: /pkg/rk356x
+  - from: /pkg/rk3588
     to: /rootfs/profiles

@@ -2,10 +2,10 @@
 kind: pkgfile.Build
 spec:
   targets:
-    - talos-sbc-rk356x-mainline
-    - talos-kernel-rk356x-mainline
-    - talos-sbc-rk356x-bsp
-    - talos-kernel-rk356x-bsp
+    - talos-sbc-rk3588-mainline
+    - talos-kernel-rk3588-mainline
+    - talos-sbc-rk3588-bsp
+    - talos-kernel-rk3588-bsp
   extraBuildArgs:
     - PKGS_PREFIX
     - PKGS
