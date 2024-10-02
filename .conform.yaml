@@ -9,7 +9,7 @@ policies:
       gpg:
         required: true
         identity:
-          gitHubOrganization: milas
+          gitHubOrganization: alabruna
       spellcheck:
         locale: US
       maximumOfOneCommit: true

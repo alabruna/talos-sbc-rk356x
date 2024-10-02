@@ -24,4 +24,4 @@ vars:
   linux_bsp_sha256: eed1c82c5500f8408ba38940977afff12a98a92b0a0d43addb33ea5da57f0118
   linux_bsp_sha512: 1cee5a5b1de26935e5403147fdc394d38942d277dcc0c831348a3a1733c03a5e455951345789fecba96f43b1004cef240c6324ded445548815792f38a2e0096a
 labels:
-  org.opencontainers.image.source: https://github.com/milas/talos-sbc-rk3588
+  org.opencontainers.image.source: https://github.com/alabruna/talos-sbc-rk356x

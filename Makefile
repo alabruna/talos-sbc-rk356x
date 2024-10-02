@@ -13,7 +13,7 @@ IMAGE_TAG ?= $(TAG)
 OPERATING_SYSTEM := $(shell uname -s | tr '[:upper:]' '[:lower:]')
 GOARCH := $(shell uname -m | sed 's/x86_64/amd64/' | sed 's/aarch64/arm64/')
 REGISTRY ?= ghcr.io
-USERNAME ?= milas
+USERNAME ?= alabruna
 REGISTRY_AND_USERNAME ?= $(REGISTRY)/$(USERNAME)
 KRES_IMAGE ?= ghcr.io/siderolabs/kres:latest
 CONFORMANCE_IMAGE ?= ghcr.io/siderolabs/conform:latest
@@ -53,10 +53,8 @@ KERNEL_VARIANT ?= mainline
 
 # targets defines all the available targets
 
-TARGETS = talos-sbc-rk3588-mainline
-TARGETS += talos-kernel-rk3588-mainline
-TARGETS += talos-sbc-rk3588-bsp
-TARGETS += talos-kernel-rk3588-bsp
+TARGETS = talos-sbc-rk356x-mainline
+TARGETS += talos-kernel-rk356x-mainline
 
 # help menu
 

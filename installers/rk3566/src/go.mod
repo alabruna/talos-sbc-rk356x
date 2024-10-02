@@ -1,4 +1,4 @@
-module rk3588
+module rk356x
 
 go 1.22.3
 

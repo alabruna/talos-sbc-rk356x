@@ -21,30 +21,28 @@ const (
 )
 
 func main() {
-	adapter.Execute[rk3588ExtraOpts](&RK3588Installer{})
+	adapter.Execute[rk3566ExtraOpts](&RK3566Installer{})
 }
 
-type RK3588Installer struct{}
+type RK3566Installer struct{}
 
-type rk3588ExtraOpts struct {
+type rk3566ExtraOpts struct {
 	Board   string `json:"board"`
 	Chipset string `json:"chipset"`
 }
 
-func ChipsetName(o rk3588ExtraOpts) string {
+func ChipsetName(o rk3566ExtraOpts) string {
 	if o.Chipset != "" {
 		return o.Chipset
 	}
 	switch o.Board {
-	case "rock-5a":
-		return "rk3588s"
-	case "rock-5b":
-		return "rk3588"
+	case "zero-3e":
+		return "rk3566"
 	}
 	return ""
 }
 
-func (i *RK3588Installer) GetOptions(extra rk3588ExtraOpts) (overlay.Options, error) {
+func (i *RK3566Installer) GetOptions(extra rk3566ExtraOpts) (overlay.Options, error) {
 	if extra.Board == "" {
 		return overlay.Options{}, errors.New("board variant required")
 	}
@@ -74,7 +72,7 @@ func (i *RK3588Installer) GetOptions(extra rk3588ExtraOpts) (overlay.Options, er
 	}, nil
 }
 
-func (i *RK3588Installer) Install(options overlay.InstallOptions[rk3588ExtraOpts]) error {
+func (i *RK3566Installer) Install(options overlay.InstallOptions[rk3566ExtraOpts]) error {
 	if options.ExtraOptions.Board == "" {
 		return errors.New("board variant required")
 	}

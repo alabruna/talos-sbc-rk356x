@@ -1,4 +1,4 @@
-name: overlay-rk3588
+name: overlay-rk356x
 variant: scratch
 shell: /toolchain/bin/bash
 dependencies:
@@ -14,12 +14,12 @@ steps:
         export PATH=${PATH}:${TOOLCHAIN}/go/bin
 
         cd /pkg/src
-        CGO_ENABLED=0 go build -o ./rk3588 .
+        CGO_ENABLED=0 go build -o ./rk356x .
     install:
       - |
         mkdir -p /rootfs/installers/
 
-        cp -p /pkg/src/rk3588 /rootfs/installers/rk3588
+        cp -p /pkg/src/rk356x /rootfs/installers/rk356x
 finalize:
   - from: /rootfs
     to: /rootfs
