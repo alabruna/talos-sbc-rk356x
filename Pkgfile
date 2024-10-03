@@ -15,8 +15,8 @@ vars:
 
   # mainline kernel
   linux_mainline_version: 6.11.1
-  linux_mainline_sha256: e02aa92d7f7aa29f97967a87854e8a3d7efbfc46eecf40573372f209699f8d80
-  linux_mainline_sha512: ccb5717abcb557583ec09fda1eefa73f8bcd426a53e0baa969a452e908c6a38ac923d101fe421c425f282650b6e90e82af6651734e5d95630dbaf2cac82724f8
+  linux_mainline_sha256: bcd006b5a3b99e0c4d88e94f92a6cfa2b25819d90e04260191d5207faea6b03f
+  linux_mainline_sha512: 24e4027f46e13ca9c6a323795d34a900c3bb7b98f77c7380aae7d5fa82407d8a59f5ab581f4123f30f342194e394688e2a06df1be048db9593f6bfc94d6dfa93
 
 labels:
   org.opencontainers.image.source: https://github.com/alabruna/talos-sbc-rk356x
