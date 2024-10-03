@@ -1,4 +1,4 @@
-# talos-sbc-rk3588
+# talos-sbc-rk356x
 
 Talos overlay for Rockchip RK356x ARM64 single-board computer (SBC) devices such as the Radxa Zero 3 series.
 
