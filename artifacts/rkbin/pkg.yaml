@@ -1,4 +1,3 @@
-# source: https://github.com/siderolabs/sbc-rockchip/pull/7
 name: rkbin
 variant: scratch
 shell: /toolchain/bin/bash
@@ -6,7 +5,7 @@ dependencies:
   - stage: base
 steps:
   - sources:
-      - url: https://github.com/rockchip-linux/rkbin/archive/{{ .rkbin_ref }}.tar.gz
+      - url: https://github.com/rockchip-linux/rkbin/archive/refs/heads/{{ .rkbin_branch }}.tar.gz
         destination: rkbin.tar.gz
         sha256: "{{ .rkbin_sha256 }}"
         sha512: "{{ .rkbin_sha512 }}"
