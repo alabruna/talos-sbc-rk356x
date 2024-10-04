@@ -4,9 +4,9 @@ format: v1alpha2
 
 vars:
   # u-boot mainline
-  uboot_version: 2024.07
-  uboot_sha256: f591da9ab90ef3d6b3d173766d0ddff90c4ed7330680897486117df390d83c8f
-  uboot_sha512: 678f44e2b9132140f0bf05c637e57e638c73c278611037a41824b3ebff2131af4dec0163da4664bb2e5c4fd8034ba8c95b93b57f7aa9f4c045da322d87c3b5e9
+  uboot_version: u-boot-2024.10-rc6
+  uboot_sha256: d7799aeb0620909c7630ed3fc5fcbc04682aff034c018624a2584cf04b9143db
+  uboot_sha512: df569020757f330dc9f25f05712f02f4f8f1e3f5219223a439519050e684bee93971d85c2eb6a014e92e6ae6a2e59dac35b91c4f8e2cfa7884a5cf0083e8a023
 
   # Rockchip rkbin
   rkbin_branch: master
