@@ -4,7 +4,7 @@ format: v1alpha2
 
 vars:
   # u-boot mainline
-  uboot_version: u-boot-2024.10-rc6
+  uboot_version: 2024.10-rc6
   uboot_sha256: d7799aeb0620909c7630ed3fc5fcbc04682aff034c018624a2584cf04b9143db
   uboot_sha512: df569020757f330dc9f25f05712f02f4f8f1e3f5219223a439519050e684bee93971d85c2eb6a014e92e6ae6a2e59dac35b91c4f8e2cfa7884a5cf0083e8a023
 
