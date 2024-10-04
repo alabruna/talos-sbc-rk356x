@@ -1,4 +1,4 @@
-name: u-boot-zero-e3
+name: u-boot-zero-3e
 variant: scratch
 shell: /toolchain/bin/bash
 dependencies:

@@ -1,20 +1,20 @@
-name: talos-sbc-rk356x-{{ .BUILD_ARG_KERNEL_VARIANT }}
+name: talos-sbc-rk3566-{{ .BUILD_ARG_KERNEL_VARIANT }}
 variant: scratch
 shell: /toolchain/bin/bash
 dependencies:
   - stage: base
   - stage: u-boot
     platform: linux/arm64
-  - stage: overlay-rk356x
+  - stage: overlay-rk3566
     platform: linux/arm64
-  - stage: talos-kernel-rk356x-{{ .BUILD_ARG_KERNEL_VARIANT }}
+  - stage: talos-kernel-rk3566-{{ .BUILD_ARG_KERNEL_VARIANT }}
     platform: linux/arm64
   - stage: profiles
 steps:
   - prepare:
       - |
         mkdir -p /rootfs/artifacts/arm64/dtb/rockchip
-        cp /dtb/rockchip/rk356x*.dtb /rootfs/artifacts/arm64/dtb/rockchip/
+        cp /dtb/rockchip/rk3566*.dtb /rootfs/artifacts/arm64/dtb/rockchip/
 finalize:
   - from: /rootfs
     to: /

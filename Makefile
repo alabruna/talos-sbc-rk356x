@@ -1,6 +1,6 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED, PLEASE DO NOT EDIT.
 #
-# Generated on 2024-06-02T22:45:44Z by kres f249b6c.
+# Generated on 2024-10-03T12:32:02Z by kres 34e72ac.
 
 # common variables
 
@@ -25,7 +25,7 @@ SOURCE_DATE_EPOCH := $(shell git log $(INITIAL_COMMIT_SHA) --pretty=%ct)
 
 # sync bldr image with pkgfile
 
-BLDR_RELEASE := v0.3.1
+BLDR_RELEASE := v0.3.2
 BLDR_IMAGE := ghcr.io/siderolabs/bldr:$(BLDR_RELEASE)
 BLDR := docker run --rm --user $(shell id -u):$(shell id -g) --volume $(PWD):/src --entrypoint=/bldr $(BLDR_IMAGE) --root=/src
 
@@ -48,13 +48,13 @@ COMMON_ARGS += --build-arg=KERNEL_VARIANT="$(KERNEL_VARIANT)"
 # extra variables
 
 PKGS_PREFIX ?= ghcr.io/siderolabs
-PKGS ?= v1.7.0
+PKGS ?= v1.8.0
 KERNEL_VARIANT ?= mainline
 
 # targets defines all the available targets
 
-TARGETS = talos-sbc-rk356x-mainline
-TARGETS += talos-kernel-rk356x-mainline
+TARGETS = talos-sbc-rk3566-mainline
+TARGETS += talos-kernel-rk3566-mainline
 
 # help menu
 
