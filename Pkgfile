@@ -10,8 +10,8 @@ vars:
 
   # Rockchip rkbin
   rkbin_branch: master
-  rkbin_sha256: 15ca6517c2d0c85ab0e3d628d4595d2e1b873ccfb0977ba593a939ed3f05e168
-  rkbin_sha512: 0c215a9e1e24641029ccbdbbb80aade95921b8e5c62aa9a5e25070b170b087b33787e4aae0ccdadf504bb2218ad7613f774381f5d595b94e77d1b6c45f01eef8
+  rkbin_sha256: 12ee8a8ee7e77065f4242344168c8f748bb9c5e1d974b781ed10071d071b2190
+  rkbin_sha512: 6adcbe8cc9a06240957a59bc91a0e840834363fc82cbf5a6c03f4d1d18adfc9101fb92e1b5f41f0a79a8297058d3c8ced8a8bcbacf10ad71960f7700c901bb04
 
   # mainline kernel
   linux_mainline_version: 6.11.1
@@ -19,4 +19,4 @@ vars:
   linux_mainline_sha512: 24e4027f46e13ca9c6a323795d34a900c3bb7b98f77c7380aae7d5fa82407d8a59f5ab581f4123f30f342194e394688e2a06df1be048db9593f6bfc94d6dfa93
 
 labels:
-  org.opencontainers.image.source: https://github.com/alabruna/talos-sbc-rk356x
+  org.opencontainers.image.source: https://harbor.agos.one/agos-homelab/talos-sbc-rk3566
