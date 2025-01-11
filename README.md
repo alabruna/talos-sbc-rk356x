@@ -1,3 +1,8 @@
+# DEPRECATED
+
+Since Talos 1.9 is using Kernel 6.12 ther is no need to compile the 6.11 kernel, but just to add u-boot, updated repo at [https://github.com/alabruna/talos-radxa-zero-3e](https://github.com/alabruna/talos-radxa-zero-3e)
+
+
 # talos-sbc-rk356x
 
 Talos overlay for Rockchip RK356x ARM64 single-board computer (SBC) devices such as the Radxa Zero 3 series.
